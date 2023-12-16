@@ -47,6 +47,8 @@ function Header() {
 
       </header>
 
+      (openDropdown && <HeaderDropdown setOpenDropdown={setOpenDropdown}/>)
+
     </div>
   )
 }
