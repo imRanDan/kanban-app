@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import logo from '../assets/logo-mobile.svg'
 import iconDown from "../assets/icon-chevron-down.svg"
 import iconUp from "../assets/icon-chevron-up.svg"
+import ellipsis from "../assets/icon-vertical-ellipsis.svg"
 
 function Header() {
 
@@ -31,6 +32,16 @@ function Header() {
           <button className='button'>
             + Add a new task
           </button>
+
+          <button
+          className='button py-1 px-3 md:hidden'
+          >
+            +
+          </button>
+
+          <img src={ellipsis} alt="" 
+          className='cursor-pointer h-6'
+          />
 
         </div>
 
