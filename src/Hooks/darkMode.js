@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 function darkMode() {
   const [theme, setTheme] = useState(localStorage.theme)
