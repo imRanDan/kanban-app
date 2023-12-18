@@ -18,9 +18,9 @@ function Header() {
           <h3 className='md:text-4xl hidden md:inline-block font-bold font-sans'>
             myTaskList
           </h3>
-        <div>
+        <div className='flex items-center'>
           <h3 className='truncate max-w-[200px] md:text-2xl text-xl font-bold md:ml-20 font-sans '>
-            board Name
+            Board Name
           </h3>
           <img src={openDropdown ? iconUp : iconDown} alt="dropdown feature" 
           className='w-3 ml-2 md:hidden' onClick={() => setOpenDropdown(state => !state) }

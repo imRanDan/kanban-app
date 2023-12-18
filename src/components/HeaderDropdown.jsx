@@ -37,13 +37,30 @@ function HeaderDropdown(setOpenDropdown) {
         <div>
           {boards.map((board, index) => (
             <div
-            className={`flex items-baseline space-x-2 px-5 py-4 ${board.isActive && 'bg-[#635fc7] rounded-r-full text-white mr-8'}`}
+            className={`flex items-baseline space-x-2 px-5 py-4 
+            ${board.isActive && 'bg-[#635fc7] rounded-r-full text-white mr-8'}`}
             key={index}
             >
-              <img></img>
+              <img src={boardIcon} className='h-4' />
+                <p
+                className='text-leg font-bold'>
+                  {board.name}
+                </p>
 
             </div>
           ))}
+
+          <div
+          className='flex items-baseline space-x-2 text-[#635fc7] px-5 py-4'
+          >
+            <img src={boardIcon} className='h-4' />
+            <p
+              className='text-lg font-bold'
+            >
+              Create a new board
+            </p>
+
+          </div>
 
         </div>
 
